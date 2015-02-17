@@ -1,6 +1,6 @@
 # scripts
-Add folder of scripts to path
-`export PATH=/dir:$PATH`
+Add folder of scripts to path (OS X)
+`export PATH=/desired/dir:$PATH`
 
 |||
 |---|---|
