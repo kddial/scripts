@@ -1,3 +1,3 @@
 #!/bin/bash
-pwd=`pwd`
-osascript -e "tell application \"Terminal\" to do script \"cd $pwd; clear\"" > /dev/null
+pwd=$(echo `pwd` | sed 's/ /\\\\\ /g')
+osascript -e "tell application \"Terminal\" to do script \"eval cd '$pwd'; clear\" " > /dev/null
